@@ -16,4 +16,8 @@ if (! $annotation) {
     exit(1);
 }
 
-echo $annotation->getText();
+$savePath = $argv[2] ?? explode('.', $path)[0].'-text.txt';
+
+file_put_contents($savePath, $annotation->getText());
+
+echo 'Results saved to "'.$savePath.'"'.PHP_EOL;
