@@ -1,6 +1,11 @@
 {
     "name": "appel/copy-notes",
     "description": "Extract text from scanned handwritten notes using Google Vision API.",
+    "keywords": [
+        "ocr",
+        "vision-api",
+        "php"
+    ],
     "type": "project",
     "require": {
         "google/cloud-vision": "^0.23.0",
