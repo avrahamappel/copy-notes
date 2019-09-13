@@ -3,7 +3,8 @@
     "description": "Extract text from scanned handwritten notes using Google Vision API.",
     "type": "project",
     "require": {
-        "google/cloud-vision": "^0.23.0"
+        "google/cloud-vision": "^0.23.0",
+        "vlucas/phpdotenv": "^3.6"
     },
     "authors": [
         {

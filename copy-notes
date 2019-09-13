@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+require 'vendor/autoload.php';
+
+Dotenv\Dotenv::create(__DIR__)->load();
+
+$imageAnnotator = new Google\Cloud\Vision\V1\ImageAnnotatorClient();
+
+$path = $argv[1];
+
+$annotation = $imageAnnotator->documentTextDetection(file_get_contents($path))->getFullTextAnnotation();
+
+if (! $annotation) {
+    echo 'No text found.'.PHP_EOL;
+    exit(1);
+}
+
+echo $annotation->getText();
