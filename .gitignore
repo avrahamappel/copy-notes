@@ -1,3 +1,4 @@
 vendor/
 .env
 google-credentials/
+composer.lock
