@@ -6,8 +6,10 @@
         "vision-api",
         "php"
     ],
+    "license": "MIT",
     "type": "project",
     "require": {
+        "php": ">=7.1",
         "google/cloud-vision": "^0.23.0",
         "vlucas/phpdotenv": "^3.6"
     },
