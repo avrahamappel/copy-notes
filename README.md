@@ -20,4 +20,10 @@ copy-notes path/to/file/notes.jpg ~/Notes/notes.txt
 composer global require appel/copy-notes
 ```
 
+Don't forget to enable the Google Vision API and download the credentials JSON file. Once you've done that, pass the file path to the `GOOGLE_APPLICATION_CREDENTIALS` environment variable.
+
+```bash
+export GOOGLE_APPLICATION_CREDENTIALS=path/to/credentials.json
+```
+
 Happy copying! 📝
